@@ -4,10 +4,19 @@
 
 {% block thanks %}
 <section>
+
+	{% if name %}
 	<div class="container">
 		<CENTER style='margin-top: 35%; margin-bottom: 35%;'>
 			<h1> {{ name }}, thank you for the request!</h1>
 		</CENTER>
 	</div>
+	{% else %}
+	<div class="container">
+		<CENTER style='margin-top: 35%; margin-bottom: 35%;'>
+			<h1> Thank you for the request!</h1>
+		</CENTER>
+	</div>
+	{% endif %}
 </section>
 {% endblock thanks %}
