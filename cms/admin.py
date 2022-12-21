@@ -19,7 +19,7 @@ class CmsAdmin(admin.ModelAdmin):
         else:
             return 'No image'
 
-    get_img.short_description = 'Image'
+    get_img.sort_description = 'Image'
 
 
 admin.site.register(CmsSlider, CmsAdmin)
